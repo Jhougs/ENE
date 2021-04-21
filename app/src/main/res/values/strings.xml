@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ENE</string>
+    <string name="imag_logo">Logo ENE</string>
+    <string name="imag_intro">Intro ENE</string>
+    <string name="Correo">Correo Electrónico</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="forgetpass"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="Inicio_sesion">Inicio Sesión</string>
+    <string name="new_user">¿Aún no eres parte del team ENE? </string>
+    <string name="register"><u>Regístrate</u></string>
+    <string name="register_fot">Registerfoto</string>
+    <string name="registro">Regístrate</string>
+    <string name="Confirmacion">Contraseña(mín 6 caracteres)</string>
+    <string name="Nombre_Usuario">Nombre de usuario</string>
+    <string name="Registro">Registrar</string>
+    <string name="Email_required">Debe digitar un correo</string>
+    <string name="Error_message">Debe digitar una contraseña</string>
+    <string name="register_error">Debe llenar todos los campos</string>
+    <string name="contra_6_Dig">La contraseña debe ser de mínimo 6 digitos</string>
+    <string name="no_igua_contra">Las contraseñas no son iguales</string>
+    <string name="Cerrar_Sesion">Cerrar Sesion</string>
+    <string name="error_register">Su correo o contraseña son incorrectas</string>
+    <string name="su_correo_es">"Su correo electronico es: "</string>
+    <string name="contra_main">Su contraseña es:</string>
+    <string name="error_email">Email no válido</string>
+    <string name="campo">Campo Obligatorio</string>
+
+</resources>
