@@ -90,6 +90,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="end"
+            android:minHeight="48dp"
             android:text="@string/forgetpass"
             android:textColor="@color/md_white_1000"
             android:textStyle="bold" />

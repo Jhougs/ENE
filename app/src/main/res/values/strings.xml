@@ -24,5 +24,18 @@
     <string name="contra_main">Su contraseña es:</string>
     <string name="error_email">Email no válido</string>
     <string name="campo">Campo Obligatorio</string>
+    <string name="Home">Home</string>
+    <string name="Busqueda">Busqueda</string>
+    <string name="Deseos">Deseos</string>
+    <string name="Carrito">Carrito</string>
+    <string name="Perfil">Perfil</string>
+    <string name="mi_cuenta">Mi cuenta</string>
+    <string name="mis_pedidos">Mis pedidos</string>
+    <string name="texto_sin_pedidos">Aun no se han realizado pedidos</string>
+    <string name="Datos_perfil">Datos Generales del perfil</string>
+    <string name="busqueda_info">Lugar para realizar busquedas</string>
+    <string name="carrito_info">Espacio para carrito de compras</string>
+    <string name="deseos_info">Espacio para la lista de deseos</string>
+    <string name="info_home">Espacio donde se verán todas las prendas</string>
 
 </resources>

@@ -6,56 +6,35 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.ui.AppBarConfiguration
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.juanviana.ene.databinding.ActivityMainBinding
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 
-private lateinit var mainbinding: ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        mainbinding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(mainbinding.root)
+        val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
-        var data = intent.extras
-        var email= data?.getString("email")
-        var contra= data?.getString("contraseña")
-        mainbinding.textView.text = email
-        mainbinding.contraTextview.text= contra
-
-        Log.d("metodo", "onCreate")
+        val navController = findNavController(R.id.nav_host_fragment)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.navigation_home,
+                R.id.navigation_busqueda,
+                R.id.navigation_deseos,
+                R.id.navigation_carrito,
+                R.id.navigation_perfil,
+            )
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
     }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu, menu)
-        return true
-
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.logout_menu -> {
-                enviar()
+}
 
 
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
-    private fun enviar() {
-        var data = intent.extras
-        var email= data?.getString("email")
-        var contra= data?.getString("contraseña")
-        val intent = Intent(this, LoginActivity::class.java)
-        intent.putExtra("confiremail", email)
-        intent.putExtra("confircon",contra)
-        startActivity(intent)
-        finish()
-    }
-
-
-
-
-
-    }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.juanviana.ene.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_busqueda"
+        android:name="com.juanviana.ene.BusquedaFragment"
+        android:label="fragment_busqueda"
+        tools:layout="@layout/fragment_busqueda" />
+    <fragment
+        android:id="@+id/navigation_deseos"
+        android:name="com.juanviana.ene.DeseosFragment"
+        android:label="fragment_deseos"
+        tools:layout="@layout/fragment_deseos" />
+    <fragment
+        android:id="@+id/navigation_carrito"
+        android:name="com.juanviana.ene.CarritoFragment"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" />
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.juanviana.ene.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/micuentaFragment"
+        android:name="com.juanviana.ene.MicuentaFragment"
+        android:label="fragment_micuenta"
+        tools:layout="@layout/fragment_micuenta" />
+    <fragment
+        android:id="@+id/pedidosFragment"
+        android:name="com.juanviana.ene.PedidosFragment"
+        android:label="fragment_pedidos"
+        tools:layout="@layout/fragment_pedidos" />
+</navigation>
