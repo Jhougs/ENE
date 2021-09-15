@@ -6,37 +6,71 @@
     app:startDestination="@id/navigation_home">
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.juanviana.ene.HomeFragment"
+        android:name="com.juanviana.ene.ui.main.pages.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_prendaFagment"
+            app:destination="@id/prendaFagment" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_busqueda"
-        android:name="com.juanviana.ene.BusquedaFragment"
+        android:name="com.juanviana.ene.ui.main.pages.busqueda.BusquedaFragment"
         android:label="fragment_busqueda"
         tools:layout="@layout/fragment_busqueda" />
     <fragment
         android:id="@+id/navigation_deseos"
-        android:name="com.juanviana.ene.DeseosFragment"
+        android:name="com.juanviana.ene.ui.main.pages.deseos.DeseosFragment"
         android:label="fragment_deseos"
         tools:layout="@layout/fragment_deseos" />
     <fragment
         android:id="@+id/navigation_carrito"
-        android:name="com.juanviana.ene.CarritoFragment"
+        android:name="com.juanviana.ene.ui.main.pages.carrito.CarritoFragment"
         android:label="fragment_carrito"
         tools:layout="@layout/fragment_carrito" />
     <fragment
         android:id="@+id/navigation_perfil"
-        android:name="com.juanviana.ene.PerfilFragment"
+        android:name="com.juanviana.ene.ui.main.user.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" />
     <fragment
         android:id="@+id/micuentaFragment"
-        android:name="com.juanviana.ene.MicuentaFragment"
+        android:name="com.juanviana.ene.ui.main.user.MicuentaFragment"
         android:label="fragment_micuenta"
         tools:layout="@layout/fragment_micuenta" />
     <fragment
         android:id="@+id/pedidosFragment"
-        android:name="com.juanviana.ene.PedidosFragment"
+        android:name="com.juanviana.ene.ui.main.user.PedidosFragment"
         android:label="fragment_pedidos"
         tools:layout="@layout/fragment_pedidos" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.juanviana.ene.ui.main.access.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.juanviana.ene.ui.main.access.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prendaFagment"
+        android:name="com.juanviana.ene.ui.main.Prenda.PrendaFagment"
+        android:label="fragment_prenda"
+        tools:layout="@layout/fragment_prenda" >
+        <argument
+            android:name="prenda"
+            app:argType="com.juanviana.ene.server.Prenda" />
+    </fragment>
 </navigation>

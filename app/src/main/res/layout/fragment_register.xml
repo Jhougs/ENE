@@ -7,7 +7,7 @@
     android:background="@color/black"
     android:backgroundTint="@color/black"
     android:backgroundTintMode="screen"
-    tools:context=".ui.main.access.RegistroActivity">
+    tools:context=".ui.main.access.RegisterFragment">
 
     <ImageView
         android:id="@+id/Registro_View"

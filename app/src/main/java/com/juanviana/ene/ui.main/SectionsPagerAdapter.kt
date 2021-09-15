@@ -4,10 +4,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.fragment.app.FragmentStatePagerAdapter
-import com.juanviana.ene.MicuentaFragment
-import com.juanviana.ene.PedidosFragment
-import com.juanviana.ene.PerfilFragment
+import com.juanviana.ene.ui.main.user.PerfilFragment
 import com.juanviana.ene.R
+import com.juanviana.ene.ui.main.user.MicuentaFragment
+import com.juanviana.ene.ui.main.user.PedidosFragment
 
 
 private val TAB_TITLES = arrayOf(

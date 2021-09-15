@@ -1,11 +1,11 @@
-package com.juanviana.ene
+package com.juanviana.ene.ui.main.pages.carrito
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import com.juanviana.ene.R
 
 
 class CarritoFragment : Fragment() {

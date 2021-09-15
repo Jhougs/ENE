@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTintMode="screen"
-    tools:context=".ui.main.access.LoginActivity">
+    tools:context=".ui.main.access.LoginFragment">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -16,6 +16,10 @@
         android:contentDescription="@string/imag_intro"
         android:focusable="false"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_foto2" />
 
     <LinearLayout

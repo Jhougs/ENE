@@ -37,5 +37,18 @@
     <string name="carrito_info">Espacio para carrito de compras</string>
     <string name="deseos_info">Espacio para la lista de deseos</string>
     <string name="info_home">Espacio donde se verán todas las prendas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_prenda">"Nombre de prenda "</string>
+    <string name="hint_precio">Precio</string>
+    <string name="hint_talla">Tallas disponibles</string>
+    <string name="datos_personales">Datos Personales</string>
+    <string name="datos_pago">Datos de pago</string>
+    <string name="direcciones">Direcciones</string>
+    <string name="talla_s">S</string>
+    <string name="talla_m">M</string>
+    <string name="talla_l">L</string>
+    <string name="talla_xl">XL</string>
+    <string name="añadir">Añadir al carrito </string>
 
 </resources>

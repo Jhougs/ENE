@@ -1,4 +1,4 @@
-package com.juanviana.ene
+package com.juanviana.ene.ui.main.user
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
+import com.juanviana.ene.R
 import com.juanviana.ene.ui.main.SectionsPagerAdapter
 
 
